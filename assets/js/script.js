@@ -5,7 +5,7 @@ const addTodo = () => {
 
 	let text, checkbox, br, level, wrapAll;
 	wrapAll = document.createElement("id");
-	wrapAll.id = id + '-wrapAll';
+	wrapAll.setAttribute("id", id + '-wrapAll');
 	wrapAll.setAttribute("class", "animated fadeInDown");
 
 

@@ -36,18 +36,18 @@ section {
 #add-todo-wrapper > input[type="text"] {
 	padding: 10px;
 	outline: 0;
-	border: 1px solid skyblue;
+	border: 1px solid rgb(246, 250, 0);
 	border-right: 1px solid transparent;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
 #add-todo-wrapper > button {
 	padding: 10px;
-	border: 1px solid skyblue;
+	border: 1px solid #fa00d9;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border-left: 1px solid transparent;
-	background-color: lightgray;
+	background: #fa00d9;
 	outline: 0;
 	cursor: pointer;
 }
@@ -67,19 +67,26 @@ section {
 .wrapall-class {
 	color: red;
 }
-.div-header {
+#completed-todo-wrapper .div-header {
 	padding: 10px 10px;
 	font-size: 1.3em;
-	background-color: skyblue;
+	background-color: rgb(246, 250, 0);
+	color: white;
+}
+#yet-todo-wrapper .div-header {
+	padding: 10px 10px;
+	font-size: 1.3em;
+	background-color: rgb(250, 0, 217);
 	color: white;
 }
 .todo-text {
 	padding: 10px;
-	background-color: lightgray;
+	background-color: rgb(255, 255, 255);
 	color: black;
 }
 .wrap-all {
 	padding: 10px;
+	width: 100%;
 	background-color: red;
 }
 input[type="checkbox"] {
@@ -87,15 +94,17 @@ input[type="checkbox"] {
 	height: 1.5em;
 	width: 1.5em;
 }
-#notes {
-	/*width: 30%;*/
-	margin: 50px;
-	height: auto;
-	height: 0%;
-	box-shadow: 0px 0px 10px 0px gray;
+#yet-todo-wrapper .animated {
+	border-bottom: 3px solid rgb(253, 4, 211);
+	margin: 10px 0;
+	padding: 10px;
+	display: block;
 }
-#notes > input {
-	padding: 150px;
+#completed-todo-wrapper .animated {
+	border-bottom: 3px solid rgb(253, 228, 4);
+	margin: 10px 0;
+	padding: 10px;
+	display: block;
 }
 footer {
 	margin-bottom: 70px;
