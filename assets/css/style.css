@@ -3,6 +3,7 @@ body {
 	background-color: lightyellow;
 }
 header {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
@@ -110,17 +111,22 @@ footer {
 	margin-bottom: 70px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+	body{
+		width: 100%;
+	}
 	nav {
 		display: none;
 	}
 	section {
-		flex-direction: column;
+		/*commented this for responsiveness*/
+		/*flex-direction: column;*/
 		justify-content: center;
 	}
 	#add-todo-wrapper {		
-		width: 70%;
+		width: 100%;
 		padding: 50px;
+		margin: auto;
 	}
 	#yet-todo-wrapper {
 		width: 80%;
